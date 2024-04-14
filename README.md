@@ -128,12 +128,29 @@
 <p>Main </p>
 </td>
 <td width="141">
-<p>امکان prompt گرفتن از کاربر و مدیریت آن با صدا کردن توابع کلاس مربوطه. </p>
+<p>اضافه کردن prompt جدید و مدیریت آن   </p>
 </td>
 <td width="292">
-<p>امکان prompt گرفتن از کاربر و مدیریت آن با صدا کردن توابع کلاس مربوطه.</p>
+<p>  علاوه‌بر prompt یک case جدید هم به switch_case اضافه میکنیم تا محتوای آن را مشخص کنیم.</p>
 </td>
 </tr>
+
+<tr>
+<td width="64">
+<p><strong>8</strong></p>
+</td>
+<td width="198">
+<p>Main </p>
+</td>
+<td width="141">
+<p>اضافه کردن instance جدید برای پیام تلگرامی   </p>
+</td>
+<td width="292">
+<p>یک instance از کلاس TelegramMessageService در صورت اینکه message == telegramMessage</p>
+</td>
+</tr>
+
+
 </tbody>
 </table>
 
