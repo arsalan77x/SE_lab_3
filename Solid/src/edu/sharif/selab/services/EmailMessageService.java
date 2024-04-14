@@ -5,11 +5,11 @@ import edu.sharif.selab.models.Message;
 
 import java.util.regex.Pattern;
 
-public class EmailMessageService implements MessageService{
+public class EmailMessageService implements MessageService, ValidationService{
 
     @Override
     public void sendMessage(Message message) {
-        if(validateEmailAddress(message.getSource()) && validateEmailAddress(message.getTarget())){
+        if(validate(message.getSource()) && validate(message.getTarget())){
             System.out.println("Sending a Email from " + message.getSource() + " to " + message.getTarget() +
              " with content : " + message.getContent());
         }else{
@@ -17,7 +17,8 @@ public class EmailMessageService implements MessageService{
         }
     }
 
-    public boolean validateEmailAddress(String email) {
+    @Override
+    public boolean validate(String email) {
         // Regular expression pattern for validating email addresses
         String emailRegex = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$";
 
