@@ -112,17 +112,47 @@
 <p>TelegramMessageService </p>
 </td>
 <td width="141">
-<p>اضافه کردن توابع سرویس پیام تلگرامی	</p>
+<p>اضافه کردن تابع به TelegramMessageService	</p>
 </td>
 <td width="292">
-<p>	4 تابع که 2 تا مربوط به ارسال پیام و صحت‌سنجی id هستند و دوتای دیگر مربوط به دو شیوه‌ی دیگر با دامنه‌‌ی خالی هستند.</p>
+<p>	تابع sendTelegramMessage را پیاده‌سازی میکنیم.</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>7</strong></p>
+</td>
+<td width="198">
+<p>TelegramMessageService </p>
+</td>
+<td width="141">
+<p>اضافه کردن تابع به TelegramMessageService	</p>
+</td>
+<td width="292">
+<p>	تابع validateTelegramID را پیاده‌سازی میکنیم.</p>
+</td>
+</tr>
+
+<tr>
+<td width="64">
+<p><strong>8</strong></p>
+</td>
+<td width="198">
+<p>TelegramMessageService </p>
+</td>
+<td width="141">
+<p>اضافه کردن توابع به TelegramMessageService	</p>
+</td>
+<td width="292">
+<p>	توابع sendEmailMessage و sendSmsMessage را با بدنه‌ی خالی اضافه میکنیم. </p>
 </td>
 </tr>
 
 
 <tr>
 <td width="64">
-<p><strong>7</strong></p>
+<p><strong>9</strong></p>
 </td>
 <td width="198">
 <p>Main </p>
@@ -137,7 +167,7 @@
 
 <tr>
 <td width="64">
-<p><strong>8</strong></p>
+<p><strong>10</strong></p>
 </td>
 <td width="198">
 <p>Main </p>
