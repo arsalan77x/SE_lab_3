@@ -233,7 +233,7 @@
 <p><strong>موارد تحقق</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>مدل‌ها اوکین.</p>
 </td>
 </tr>
 <tr>
@@ -241,7 +241,7 @@
 <p><strong>موارد نقض</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>The EmailMessageService depends directly on the concrete EmailMessage class, which is a low-level detail. This is a violation of DIP, as high-level modules (like a service coordinator that uses MessageService) should not depend on low-level details like EmailMessage, SmsMessage, etc.</p>
 </td>
 </tr>
 </tbody>
