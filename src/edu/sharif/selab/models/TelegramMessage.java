@@ -1,22 +1,22 @@
 package edu.sharif.selab.models;
 
-public class TelegramMessage {
+public class TelegramMessage extends Message{
     private String sourceTelegramID;
     private String targetTelegramID;
 
-    public String getSourcePhoneNumber() {
+    public String getSourceTelegramID() {
         return sourceTelegramID;
     }
 
-    public void setSourcePhoneNumber(String sourceTelegramID) {
+    public void setSourceTelegramID(String sourceTelegramID) {
         this.sourceTelegramID = sourceTelegramID;
     }
 
-    public String getTargetPhoneNumber() {
+    public String getTargetTelegramID() {
         return targetTelegramID;
     }
 
-    public void setTargetPhoneNumber(String targetTelegramID) {
+    public void setTargetTelegramID(String targetTelegramID) {
         this.targetTelegramID = targetTelegramID;
     }    
 }

@@ -35,4 +35,9 @@ public class SmsMessageService implements MessageService{
         // If all checks pass, return true (valid phone number)
         return true;
     }
+
+    @Override
+    public void sendTelegramMessage(TelegramMessage telegramMessage) {
+        //Empty Body!
+    }
 }

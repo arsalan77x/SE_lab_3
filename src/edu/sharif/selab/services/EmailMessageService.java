@@ -34,7 +34,6 @@ public class EmailMessageService implements MessageService{
 
     @Override
     public void sendTelegramMessage(TelegramMessage telegramMessage) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'sendTelegramMessage'");
+        //Empty Body!
     }
 }
