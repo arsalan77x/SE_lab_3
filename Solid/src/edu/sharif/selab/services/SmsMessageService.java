@@ -5,7 +5,7 @@ import edu.sharif.selab.models.Message;
 public class SmsMessageService implements MessageService{
     @Override
     public void sendMessage(Message message) {
-        if(validatePhoneNumber(message.getSource()) && validatePhoneNumber(message.getTarget())){
+        if(validate(message.getSource()) && validate(message.getTarget())){
             System.out.println("Sending a SMS from " + message.getSource() + " to " + message.getTarget() 
                                 + " with content : " + message.getContent());
         }else{
@@ -13,7 +13,7 @@ public class SmsMessageService implements MessageService{
         }
     }
 
-    private boolean validatePhoneNumber(String phoneNumber) {
+    private boolean validate(String phoneNumber) {
         // Check if the phone number is exactly 11 characters long
         if (phoneNumber.length() != 11) {
             return false; // Phone number length is not valid
