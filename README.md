@@ -137,7 +137,7 @@
 </tbody>
 </table>
 
-مجموع تعداد تغییرات: ..............
+مجموع تعداد تغییرات: 7
 
 ### گام ۲: تحلیل و وارسی برنامه از منظر تحقق و یا عدم تحقق اصول SOLID
 در خصوص این برنامه‌ای که نوشته شده بود و شما یک قابلیت به آن اضافه کردید، بر اساس اصول SOLID موارد نقض و یا محقق شدن هر کدام از آن اصول را بیان کنید. در بیان موارد تحقق و نقض، علت تحقق و یا نقض را نیز به صورت کامل توضیح دهید:
@@ -153,7 +153,7 @@
 <p><strong>موارد تحقق</strong></p>
 </td>
 <td width="454">
-<p>&nbsp;</p>
+<p>در مدلها رعایت شده. زیرا 3 کلاس فرزند هر کدام یک کار را می‌کنند. اگرچه برای حل عدم رعایت این اصل در بخش سرویس می‌توان این مدل‌ها را تلفیق کرد و همچنان مدل یک کار کند.</p>
 </td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@
 <p><strong>موارد نقض</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>سرویس MessageService 3 کار انجام می‌دهد. همچنین در هر کدام از سه سرویس دو کار validateion و send انجام شده.</p>
 </td>
 </tr>
 <tr>
@@ -173,7 +173,7 @@
 <p><strong>موارد تحقق</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>مدل ها مطابقت دارند.</p>
 </td>
 </tr>
 <tr>
@@ -181,7 +181,7 @@
 <p><strong>موارد نقض</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>کلاس‌های Main و Message Service ندارند. اگر ارسال پیام با تلگرام را اضافه کنیم نیاز دارد تا تغییر کند.</p>
 </td>
 </tr>
 <tr>
@@ -193,7 +193,7 @@
 <p><strong>موارد تحقق</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p> In principle, anywhere a Message object is expected, any of its subclasses (EmailMessage, SmsMessage, TelegramMessage) should be able to substitute without causing errors or changing the behavior of the program.  The message subclasses seem to adhere to LSP since they extend functionality without changing existing behavior expected by code that uses the Message base class.</p>
 </td>
 </tr>
 <tr>
@@ -201,7 +201,7 @@
 <p><strong>موارد نقض</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>The specific implementation of MessageService methods and the reliance on type checking suggest a violation of LSP. This design forces implementers to know details about subclasses, which should ideally be unnecessary.</p>
 </td>
 </tr>
 <tr>
@@ -213,7 +213,7 @@
 <p><strong>موارد تحقق</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>در کلاس ها رعایت شده، هر کلاس پیاده سازی فقط متدهای مربوط به نوع سرویس سفارش خاص خود را پیاده سازی میکند. </p>
 </td>
 </tr>
 <tr>
@@ -221,7 +221,7 @@
 <p><strong>موارد نقض</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>For EmailMessageService, implementing sendSmsMessage and sendTelegramMessage is unnecessary and forces the service to depend on methods that it does not use, which is a clear violation of ISP.</p>
 </td>
 </tr>
 <tr>
