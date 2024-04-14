@@ -13,8 +13,12 @@ public class SmsMessageService implements MessageService, ValidationService{
         }
     }
 
+<<<<<<< HEAD
     @Override
     public boolean validate(String phoneNumber) {
+=======
+    private boolean validate(String phoneNumber) {
+>>>>>>> c6d8bc36ae01b88c3ba70777be233b1b772b5f9d
         // Check if the phone number is exactly 11 characters long
         if (phoneNumber.length() != 11) {
             return false; // Phone number length is not valid
