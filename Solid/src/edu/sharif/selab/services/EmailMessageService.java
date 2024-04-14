@@ -9,7 +9,7 @@ public class EmailMessageService implements MessageService{
 
     @Override
     public void sendMessage(Message message) {
-        if(validateEmailAddress(message.getSource()) && validateEmailAddress(message.getTarget())){
+        if(validate(message.getSource()) && validate(message.getTarget())){
             System.out.println("Sending a Email from " + message.getSource() + " to " + message.getTarget() +
              " with content : " + message.getContent());
         }else{
@@ -17,7 +17,7 @@ public class EmailMessageService implements MessageService{
         }
     }
 
-    public boolean validateEmailAddress(String email) {
+    public boolean validate(String email) {
         // Regular expression pattern for validating email addresses
         String emailRegex = "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$";
 
